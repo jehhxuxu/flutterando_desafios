@@ -1,0 +1,1270 @@
+define(['dart_sdk', 'packages/flutter/src/widgets/widget_span.dart', 'packages/kong/pages/controllers/keyboard_controller.dart', 'packages/flutter/src/material/icon_button.dart', 'packages/kong/pages/widgets/keyboard_widget.dart', 'packages/kong/core/components/lattice/lattice_widget.dart', 'packages/kong/core/components/stair/stair_top_widget.dart', 'packages/kong/core/components/stair/stair_mid_widget.dart', 'packages/kong/core/components/stair/stair_bot_widget.dart', 'packages/flutter/src/widgets/value_listenable_builder.dart', 'packages/kong/pages/widgets/mario_widget.dart', 'packages/kong/pages/widgets/kong_widget.dart', 'packages/kong/pages/widgets/princesa_widget.dart'], (function load__packages__kong__pages__home_page_dart(dart_sdk, packages__flutter__src__widgets__widget_span$46dart, packages__kong__pages__controllers__keyboard_controller$46dart, packages__flutter__src__material__icon_button$46dart, packages__kong__pages__widgets__keyboard_widget$46dart, packages__kong__core__components__lattice__lattice_widget$46dart, packages__kong__core__components__stair__stair_top_widget$46dart, packages__kong__core__components__stair__stair_mid_widget$46dart, packages__kong__core__components__stair__stair_bot_widget$46dart, packages__flutter__src__widgets__value_listenable_builder$46dart, packages__kong__pages__widgets__mario_widget$46dart, packages__kong__pages__widgets__kong_widget$46dart, packages__kong__pages__widgets__princesa_widget$46dart) {
+  'use strict';
+  const core = dart_sdk.core;
+  const _interceptors = dart_sdk._interceptors;
+  const collection = dart_sdk.collection;
+  const dart = dart_sdk.dart;
+  const dartx = dart_sdk.dartx;
+  const framework = packages__flutter__src__widgets__widget_span$46dart.src__widgets__framework;
+  const container = packages__flutter__src__widgets__widget_span$46dart.src__widgets__container;
+  const basic = packages__flutter__src__widgets__widget_span$46dart.src__widgets__basic;
+  const widget_inspector = packages__flutter__src__widgets__widget_span$46dart.src__widgets__widget_inspector;
+  const keyboard_controller = packages__kong__pages__controllers__keyboard_controller$46dart.pages__controllers__keyboard_controller;
+  const scaffold = packages__flutter__src__material__icon_button$46dart.src__material__scaffold;
+  const keyboard_widget = packages__kong__pages__widgets__keyboard_widget$46dart.pages__widgets__keyboard_widget;
+  const lattice_widget = packages__kong__core__components__lattice__lattice_widget$46dart.core__components__lattice__lattice_widget;
+  const stair_top_widget = packages__kong__core__components__stair__stair_top_widget$46dart.core__components__stair__stair_top_widget;
+  const stair_mid_widget = packages__kong__core__components__stair__stair_mid_widget$46dart.core__components__stair__stair_mid_widget;
+  const stair_bot_widget = packages__kong__core__components__stair__stair_bot_widget$46dart.core__components__stair__stair_bot_widget;
+  const value_listenable_builder = packages__flutter__src__widgets__value_listenable_builder$46dart.src__widgets__value_listenable_builder;
+  const mario_widget = packages__kong__pages__widgets__mario_widget$46dart.pages__widgets__mario_widget;
+  const kong_widget = packages__kong__pages__widgets__kong_widget$46dart.pages__widgets__kong_widget;
+  const princesa_widget = packages__kong__pages__widgets__princesa_widget$46dart.pages__widgets__princesa_widget;
+  var home_page = Object.create(dart.library);
+  var $addAll = dartx.addAll;
+  var $add = dartx.add;
+  dart._checkModuleNullSafetyMode(false);
+  var T = {
+    _LocationL: () => (T._LocationL = dart.constFn(dart.legacy(widget_inspector._Location)))(),
+    WidgetL: () => (T.WidgetL = dart.constFn(dart.legacy(framework.Widget)))(),
+    ListOfWidgetL: () => (T.ListOfWidgetL = dart.constFn(core.List$(T.WidgetL())))(),
+    LatticeWidgetL: () => (T.LatticeWidgetL = dart.constFn(dart.legacy(lattice_widget.LatticeWidget)))(),
+    intL: () => (T.intL = dart.constFn(dart.legacy(core.int)))(),
+    intLToLatticeWidgetL: () => (T.intLToLatticeWidgetL = dart.constFn(dart.fnType(T.LatticeWidgetL(), [T.intL()])))(),
+    JSArrayOfWidgetL: () => (T.JSArrayOfWidgetL = dart.constFn(_interceptors.JSArray$(T.WidgetL())))(),
+    StairMidWidgetL: () => (T.StairMidWidgetL = dart.constFn(dart.legacy(stair_mid_widget.StairMidWidget)))(),
+    intLToStairMidWidgetL: () => (T.intLToStairMidWidgetL = dart.constFn(dart.fnType(T.StairMidWidgetL(), [T.intL()])))(),
+    LinkedHashSetOfWidgetL: () => (T.LinkedHashSetOfWidgetL = dart.constFn(collection.LinkedHashSet$(T.WidgetL())))(),
+    MarioL: () => (T.MarioL = dart.constFn(dart.legacy(keyboard_controller.Mario)))(),
+    ValueListenableBuilderOfMarioL: () => (T.ValueListenableBuilderOfMarioL = dart.constFn(value_listenable_builder.ValueListenableBuilder$(T.MarioL())))(),
+    MarioWidgetL: () => (T.MarioWidgetL = dart.constFn(dart.legacy(mario_widget.MarioWidget)))(),
+    BuildContextL: () => (T.BuildContextL = dart.constFn(dart.legacy(framework.BuildContext)))(),
+    BuildContextLAndMarioLAndWidgetLToMarioWidgetL: () => (T.BuildContextLAndMarioLAndWidgetLToMarioWidgetL = dart.constFn(dart.fnType(T.MarioWidgetL(), [T.BuildContextL(), T.MarioL(), T.WidgetL()])))()
+  };
+  var T$Eval = Object.assign({
+    _: () => T$Eval
+  }, T);
+  var S = {
+    _: () => S
+  };
+  var S$Eval = Object.assign({
+    _: () => S$Eval
+  }, S);
+  const CT = Object.create({
+    _: () => (C, CT)
+  });
+  dart.defineLazy(CT, {
+    get C2() {
+      return C[2] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "keyboardController",
+        [_Location_column]: 21,
+        [_Location_line]: 32,
+        [_Location_file]: null
+      });
+    },
+    get C1() {
+      return C[1] = dart.constList([C[2] || CT.C2], T._LocationL());
+    },
+    get C0() {
+      return C[0] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[1] || CT.C1,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 31,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C5() {
+      return C[5] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 19,
+        [_Location_line]: 29,
+        [_Location_file]: null
+      });
+    },
+    get C6() {
+      return C[6] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 19,
+        [_Location_line]: 30,
+        [_Location_file]: null
+      });
+    },
+    get C7() {
+      return C[7] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 19,
+        [_Location_line]: 31,
+        [_Location_file]: null
+      });
+    },
+    get C4() {
+      return C[4] = dart.constList([C[5] || CT.C5, C[6] || CT.C6, C[7] || CT.C7], T._LocationL());
+    },
+    get C3() {
+      return C[3] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[4] || CT.C4,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 28,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C9() {
+      return C[9] = dart.constList([], T._LocationL());
+    },
+    get C8() {
+      return C[8] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 63,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C12() {
+      return C[12] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 37,
+        [_Location_file]: null
+      });
+    },
+    get C11() {
+      return C[11] = dart.constList([C[12] || CT.C12], T._LocationL());
+    },
+    get C10() {
+      return C[10] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[11] || CT.C11,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 37,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C15() {
+      return C[15] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 17,
+        [_Location_line]: 35,
+        [_Location_file]: null
+      });
+    },
+    get C16() {
+      return C[16] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 36,
+        [_Location_file]: null
+      });
+    },
+    get C14() {
+      return C[14] = dart.constList([C[15] || CT.C15, C[16] || CT.C16], T._LocationL());
+    },
+    get C13() {
+      return C[13] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[14] || CT.C14,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 34,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C17() {
+      return C[17] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 63,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C20() {
+      return C[20] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 25,
+        [_Location_line]: 43,
+        [_Location_file]: null
+      });
+    },
+    get C19() {
+      return C[19] = dart.constList([C[20] || CT.C20], T._LocationL());
+    },
+    get C18() {
+      return C[18] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[19] || CT.C19,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 43,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C23() {
+      return C[23] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "right",
+        [_Location_column]: 17,
+        [_Location_line]: 40,
+        [_Location_file]: null
+      });
+    },
+    get C24() {
+      return C[24] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 17,
+        [_Location_line]: 41,
+        [_Location_file]: null
+      });
+    },
+    get C25() {
+      return C[25] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 42,
+        [_Location_file]: null
+      });
+    },
+    get C22() {
+      return C[22] = dart.constList([C[23] || CT.C23, C[24] || CT.C24, C[25] || CT.C25], T._LocationL());
+    },
+    get C21() {
+      return C[21] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[22] || CT.C22,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 39,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C26() {
+      return C[26] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 50,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C29() {
+      return C[29] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 48,
+        [_Location_file]: null
+      });
+    },
+    get C28() {
+      return C[28] = dart.constList([C[29] || CT.C29], T._LocationL());
+    },
+    get C27() {
+      return C[27] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[28] || CT.C28,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 47,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C32() {
+      return C[32] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 46,
+        [_Location_file]: null
+      });
+    },
+    get C33() {
+      return C[33] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 47,
+        [_Location_file]: null
+      });
+    },
+    get C31() {
+      return C[31] = dart.constList([C[32] || CT.C32, C[33] || CT.C33], T._LocationL());
+    },
+    get C30() {
+      return C[30] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[31] || CT.C31,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 45,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C34() {
+      return C[34] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 32,
+        [_Location_line]: 60,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C37() {
+      return C[37] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 58,
+        [_Location_file]: null
+      });
+    },
+    get C36() {
+      return C[36] = dart.constList([C[37] || CT.C37], T._LocationL());
+    },
+    get C35() {
+      return C[35] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[36] || CT.C36,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 57,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C40() {
+      return C[40] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 17,
+        [_Location_line]: 55,
+        [_Location_file]: null
+      });
+    },
+    get C41() {
+      return C[41] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 56,
+        [_Location_file]: null
+      });
+    },
+    get C42() {
+      return C[42] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 57,
+        [_Location_file]: null
+      });
+    },
+    get C39() {
+      return C[39] = dart.constList([C[40] || CT.C40, C[41] || CT.C41, C[42] || CT.C42], T._LocationL());
+    },
+    get C38() {
+      return C[38] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[39] || CT.C39,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 54,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C43() {
+      return C[43] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 69,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C44() {
+      return C[44] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 36,
+        [_Location_line]: 74,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C45() {
+      return C[45] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 27,
+        [_Location_line]: 77,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C48() {
+      return C[48] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 19,
+        [_Location_line]: 68,
+        [_Location_file]: null
+      });
+    },
+    get C47() {
+      return C[47] = dart.constList([C[48] || CT.C48], T._LocationL());
+    },
+    get C46() {
+      return C[46] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[47] || CT.C47,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 67,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C51() {
+      return C[51] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 17,
+        [_Location_line]: 65,
+        [_Location_file]: null
+      });
+    },
+    get C52() {
+      return C[52] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 66,
+        [_Location_file]: null
+      });
+    },
+    get C53() {
+      return C[53] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 67,
+        [_Location_file]: null
+      });
+    },
+    get C50() {
+      return C[50] = dart.constList([C[51] || CT.C51, C[52] || CT.C52, C[53] || CT.C53], T._LocationL());
+    },
+    get C49() {
+      return C[49] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[50] || CT.C50,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 64,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C54() {
+      return C[54] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 84,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C55() {
+      return C[55] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 51,
+        [_Location_line]: 85,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C56() {
+      return C[56] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 86,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C59() {
+      return C[59] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 31,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C58() {
+      return C[58] = dart.constList([C[59] || CT.C59], T._LocationL());
+    },
+    get C57() {
+      return C[57] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[58] || CT.C58,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 83,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C62() {
+      return C[62] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 17,
+        [_Location_line]: 81,
+        [_Location_file]: null
+      });
+    },
+    get C63() {
+      return C[63] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 82,
+        [_Location_file]: null
+      });
+    },
+    get C64() {
+      return C[64] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 83,
+        [_Location_file]: null
+      });
+    },
+    get C61() {
+      return C[61] = dart.constList([C[62] || CT.C62, C[63] || CT.C63, C[64] || CT.C64], T._LocationL());
+    },
+    get C60() {
+      return C[60] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[61] || CT.C61,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 80,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C65() {
+      return C[65] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 93,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C66() {
+      return C[66] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 95,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C67() {
+      return C[67] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 97,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C70() {
+      return C[70] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 31,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C69() {
+      return C[69] = dart.constList([C[70] || CT.C70], T._LocationL());
+    },
+    get C68() {
+      return C[68] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[69] || CT.C69,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 92,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C73() {
+      return C[73] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 17,
+        [_Location_line]: 90,
+        [_Location_file]: null
+      });
+    },
+    get C74() {
+      return C[74] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 91,
+        [_Location_file]: null
+      });
+    },
+    get C75() {
+      return C[75] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 92,
+        [_Location_file]: null
+      });
+    },
+    get C72() {
+      return C[72] = dart.constList([C[73] || CT.C73, C[74] || CT.C74, C[75] || CT.C75], T._LocationL());
+    },
+    get C71() {
+      return C[71] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[72] || CT.C72,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 89,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C76() {
+      return C[76] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 104,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C77() {
+      return C[77] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 106,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C78() {
+      return C[78] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 108,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C81() {
+      return C[81] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 31,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C80() {
+      return C[80] = dart.constList([C[81] || CT.C81], T._LocationL());
+    },
+    get C79() {
+      return C[79] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[80] || CT.C80,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 103,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C84() {
+      return C[84] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "right",
+        [_Location_column]: 17,
+        [_Location_line]: 101,
+        [_Location_file]: null
+      });
+    },
+    get C85() {
+      return C[85] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 17,
+        [_Location_line]: 102,
+        [_Location_file]: null
+      });
+    },
+    get C86() {
+      return C[86] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 103,
+        [_Location_file]: null
+      });
+    },
+    get C83() {
+      return C[83] = dart.constList([C[84] || CT.C84, C[85] || CT.C85, C[86] || CT.C86], T._LocationL());
+    },
+    get C82() {
+      return C[82] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[83] || CT.C83,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 100,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C87() {
+      return C[87] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 115,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C88() {
+      return C[88] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 21,
+        [_Location_line]: 117,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C89() {
+      return C[89] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 19,
+        [_Location_line]: 119,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C92() {
+      return C[92] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 31,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C91() {
+      return C[91] = dart.constList([C[92] || CT.C92], T._LocationL());
+    },
+    get C90() {
+      return C[90] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[91] || CT.C91,
+        [_Location_name]: null,
+        [_Location_column]: 24,
+        [_Location_line]: 114,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C95() {
+      return C[95] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "right",
+        [_Location_column]: 17,
+        [_Location_line]: 112,
+        [_Location_file]: null
+      });
+    },
+    get C96() {
+      return C[96] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "bottom",
+        [_Location_column]: 17,
+        [_Location_line]: 113,
+        [_Location_file]: null
+      });
+    },
+    get C97() {
+      return C[97] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 17,
+        [_Location_line]: 114,
+        [_Location_file]: null
+      });
+    },
+    get C94() {
+      return C[94] = dart.constList([C[95] || CT.C95, C[96] || CT.C96, C[97] || CT.C97], T._LocationL());
+    },
+    get C93() {
+      return C[93] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[94] || CT.C94,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 111,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C100() {
+      return C[100] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 21,
+        [_Location_line]: 134,
+        [_Location_file]: null
+      });
+    },
+    get C101() {
+      return C[101] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "up",
+        [_Location_column]: 21,
+        [_Location_line]: 135,
+        [_Location_file]: null
+      });
+    },
+    get C102() {
+      return C[102] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "imgPath",
+        [_Location_column]: 21,
+        [_Location_line]: 136,
+        [_Location_file]: null
+      });
+    },
+    get C99() {
+      return C[99] = dart.constList([C[100] || CT.C100, C[101] || CT.C101, C[102] || CT.C102], T._LocationL());
+    },
+    get C98() {
+      return C[98] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[99] || CT.C99,
+        [_Location_name]: null,
+        [_Location_column]: 26,
+        [_Location_line]: 133,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C105() {
+      return C[105] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "valueListenable",
+        [_Location_column]: 17,
+        [_Location_line]: 123,
+        [_Location_file]: null
+      });
+    },
+    get C106() {
+      return C[106] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "builder",
+        [_Location_column]: 17,
+        [_Location_line]: 124,
+        [_Location_file]: null
+      });
+    },
+    get C104() {
+      return C[104] = dart.constList([C[105] || CT.C105, C[106] || CT.C106], T._LocationL());
+    },
+    get C103() {
+      return C[103] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[104] || CT.C104,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 122,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C107() {
+      return C[107] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 53,
+        [_Location_line]: 140,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C110() {
+      return C[110] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 26,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C111() {
+      return C[111] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 36,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C112() {
+      return C[112] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 46,
+        [_Location_line]: 140,
+        [_Location_file]: null
+      });
+    },
+    get C109() {
+      return C[109] = dart.constList([C[110] || CT.C110, C[111] || CT.C111, C[112] || CT.C112], T._LocationL());
+    },
+    get C108() {
+      return C[108] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[109] || CT.C109,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 140,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C113() {
+      return C[113] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[9] || CT.C9,
+        [_Location_name]: null,
+        [_Location_column]: 52,
+        [_Location_line]: 141,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C116() {
+      return C[116] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "left",
+        [_Location_column]: 26,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C117() {
+      return C[117] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "top",
+        [_Location_column]: 36,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C118() {
+      return C[118] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 45,
+        [_Location_line]: 141,
+        [_Location_file]: null
+      });
+    },
+    get C115() {
+      return C[115] = dart.constList([C[116] || CT.C116, C[117] || CT.C117, C[118] || CT.C118], T._LocationL());
+    },
+    get C114() {
+      return C[114] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[115] || CT.C115,
+        [_Location_name]: null,
+        [_Location_column]: 15,
+        [_Location_line]: 141,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C121() {
+      return C[121] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "children",
+        [_Location_column]: 13,
+        [_Location_line]: 27,
+        [_Location_file]: null
+      });
+    },
+    get C120() {
+      return C[120] = dart.constList([C[121] || CT.C121], T._LocationL());
+    },
+    get C119() {
+      return C[119] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[120] || CT.C120,
+        [_Location_name]: null,
+        [_Location_column]: 18,
+        [_Location_line]: 26,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C124() {
+      return C[124] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "width",
+        [_Location_column]: 11,
+        [_Location_line]: 25,
+        [_Location_file]: null
+      });
+    },
+    get C125() {
+      return C[125] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "child",
+        [_Location_column]: 11,
+        [_Location_line]: 26,
+        [_Location_file]: null
+      });
+    },
+    get C123() {
+      return C[123] = dart.constList([C[124] || CT.C124, C[125] || CT.C125], T._LocationL());
+    },
+    get C122() {
+      return C[122] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[123] || CT.C123,
+        [_Location_name]: null,
+        [_Location_column]: 13,
+        [_Location_line]: 24,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    },
+    get C128() {
+      return C[128] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: null,
+        [_Location_name]: "body",
+        [_Location_column]: 7,
+        [_Location_line]: 24,
+        [_Location_file]: null
+      });
+    },
+    get C127() {
+      return C[127] = dart.constList([C[128] || CT.C128], T._LocationL());
+    },
+    get C126() {
+      return C[126] = dart.const({
+        __proto__: widget_inspector._Location.prototype,
+        [_Location_parameterLocations]: C[127] || CT.C127,
+        [_Location_name]: null,
+        [_Location_column]: 12,
+        [_Location_line]: 23,
+        [_Location_file]: "file:///C:/Users/jemar/Downloads/kong/kong/lib/pages/home_page.dart"
+      });
+    }
+  }, false);
+  var C = Array(129).fill(void 0);
+  var I = ["package:kong/pages/home_page.dart"];
+  home_page.HomePage = class HomePage extends framework.StatefulWidget {
+    createState() {
+      return new home_page._HomePageState.new();
+    }
+  };
+  (home_page.HomePage.new = function(opts) {
+    let $36creationLocationd_0dea112b090073317d4 = opts && '$creationLocationd_0dea112b090073317d4' in opts ? opts.$creationLocationd_0dea112b090073317d4 : null;
+    home_page.HomePage.__proto__.new.call(this, {$creationLocationd_0dea112b090073317d4: $36creationLocationd_0dea112b090073317d4});
+    ;
+  }).prototype = home_page.HomePage.prototype;
+  dart.addTypeTests(home_page.HomePage);
+  dart.addTypeCaches(home_page.HomePage);
+  dart.setMethodSignature(home_page.HomePage, () => ({
+    __proto__: dart.getMethods(home_page.HomePage.__proto__),
+    createState: dart.fnType(dart.legacy(home_page._HomePageState), [])
+  }));
+  dart.setLibraryUri(home_page.HomePage, I[0]);
+  var _Location_parameterLocations = dart.privateName(widget_inspector, "_Location.parameterLocations");
+  var _Location_name = dart.privateName(widget_inspector, "_Location.name");
+  var _Location_column = dart.privateName(widget_inspector, "_Location.column");
+  var _Location_line = dart.privateName(widget_inspector, "_Location.line");
+  var _Location_file = dart.privateName(widget_inspector, "_Location.file");
+  home_page._HomePageState = class _HomePageState extends framework.State$(dart.legacy(home_page.HomePage)) {
+    build(context) {
+      let t0;
+      return new scaffold.Scaffold.new({body: new container.Container.new({width: 1 / 0, child: new basic.Stack.new({children: T.JSArrayOfWidgetL().of([new basic.Positioned.new({left: 100.0, bottom: 20.0, child: new keyboard_widget.KeyboardWidget.new({keyboardController: this.controller, $creationLocationd_0dea112b090073317d4: C[0] || CT.C0}), $creationLocationd_0dea112b090073317d4: C[3] || CT.C3}), new basic.Positioned.new({bottom: 87.0, child: new basic.Row.new({children: T.ListOfWidgetL().generate(9, dart.fn(index => new lattice_widget.LatticeWidget.new({$creationLocationd_0dea112b090073317d4: C[8] || CT.C8}), T.intLToLatticeWidgetL())), $creationLocationd_0dea112b090073317d4: C[10] || CT.C10}), $creationLocationd_0dea112b090073317d4: C[13] || CT.C13}), new basic.Positioned.new({right: 0.0, bottom: 250.0, child: new basic.Row.new({children: T.ListOfWidgetL().generate(8, dart.fn(index => new lattice_widget.LatticeWidget.new({$creationLocationd_0dea112b090073317d4: C[17] || CT.C17}), T.intLToLatticeWidgetL())), $creationLocationd_0dea112b090073317d4: C[18] || CT.C18}), $creationLocationd_0dea112b090073317d4: C[21] || CT.C21}), new basic.Positioned.new({top: 211.0, child: new basic.Row.new({children: T.ListOfWidgetL().generate(9, dart.fn(index => new lattice_widget.LatticeWidget.new({$creationLocationd_0dea112b090073317d4: C[26] || CT.C26}), T.intLToLatticeWidgetL())), $creationLocationd_0dea112b090073317d4: C[27] || CT.C27}), $creationLocationd_0dea112b090073317d4: C[30] || CT.C30}), new basic.Positioned.new({left: 75.0, top: 127.0, child: new basic.Row.new({children: T.ListOfWidgetL().generate(4, dart.fn(index => new lattice_widget.LatticeWidget.new({$creationLocationd_0dea112b090073317d4: C[34] || CT.C34}), T.intLToLatticeWidgetL())), $creationLocationd_0dea112b090073317d4: C[35] || CT.C35}), $creationLocationd_0dea112b090073317d4: C[38] || CT.C38}), new basic.Positioned.new({left: 177.0, top: 127.0, child: new basic.Column.new({children: (t0 = T.JSArrayOfWidgetL().of([new stair_top_widget.StairTopWidget.new({$creationLocationd_0dea112b090073317d4: C[43] || CT.C43})]), (() => {
+                    t0[$addAll](T.ListOfWidgetL().generate(5, dart.fn(index => new stair_mid_widget.StairMidWidget.new({$creationLocationd_0dea112b090073317d4: C[44] || CT.C44}), T.intLToStairMidWidgetL())));
+                    t0[$add](new stair_bot_widget.StairBotWidget.new({$creationLocationd_0dea112b090073317d4: C[45] || CT.C45}));
+                    return t0;
+                  })()), $creationLocationd_0dea112b090073317d4: C[46] || CT.C46}), $creationLocationd_0dea112b090073317d4: C[49] || CT.C49}), new basic.Positioned.new({left: 50.0, top: 44.0, child: new basic.Column.new({children: (() => {
+                    let t0 = T.JSArrayOfWidgetL().of([new stair_top_widget.StairTopWidget.new({$creationLocationd_0dea112b090073317d4: C[54] || CT.C54})]);
+                    t0[$addAll](T.ListOfWidgetL().generate(12, dart.fn(index => new stair_mid_widget.StairMidWidget.new({$creationLocationd_0dea112b090073317d4: C[55] || CT.C55}), T.intLToStairMidWidgetL())));
+                    t0[$add](new stair_bot_widget.StairBotWidget.new({$creationLocationd_0dea112b090073317d4: C[56] || CT.C56}));
+                    return t0;
+                  })(), $creationLocationd_0dea112b090073317d4: C[57] || CT.C57}), $creationLocationd_0dea112b090073317d4: C[60] || CT.C60}), new basic.Positioned.new({left: 50.0, top: 44.0, child: new basic.Column.new({children: (() => {
+                    let t1 = T.JSArrayOfWidgetL().of([new stair_top_widget.StairTopWidget.new({$creationLocationd_0dea112b090073317d4: C[65] || CT.C65})]);
+                    for (let i = 0; i < 12; i = i + 1)
+                      t1[$addAll](T.LinkedHashSetOfWidgetL().from([new stair_mid_widget.StairMidWidget.new({$creationLocationd_0dea112b090073317d4: C[66] || CT.C66})]));
+                    t1[$add](new stair_bot_widget.StairBotWidget.new({$creationLocationd_0dea112b090073317d4: C[67] || CT.C67}));
+                    return t1;
+                  })(), $creationLocationd_0dea112b090073317d4: C[68] || CT.C68}), $creationLocationd_0dea112b090073317d4: C[71] || CT.C71}), new basic.Positioned.new({right: 100.0, top: 210.0, child: new basic.Column.new({children: (() => {
+                    let t2 = T.JSArrayOfWidgetL().of([new stair_top_widget.StairTopWidget.new({$creationLocationd_0dea112b090073317d4: C[76] || CT.C76})]);
+                    for (let i = 0; i < 22; i = i + 1)
+                      t2[$addAll](T.LinkedHashSetOfWidgetL().from([new stair_mid_widget.StairMidWidget.new({$creationLocationd_0dea112b090073317d4: C[77] || CT.C77})]));
+                    t2[$add](new stair_bot_widget.StairBotWidget.new({$creationLocationd_0dea112b090073317d4: C[78] || CT.C78}));
+                    return t2;
+                  })(), $creationLocationd_0dea112b090073317d4: C[79] || CT.C79}), $creationLocationd_0dea112b090073317d4: C[82] || CT.C82}), new basic.Positioned.new({right: 260.0, bottom: 117.0, child: new basic.Column.new({children: (() => {
+                    let t3 = T.JSArrayOfWidgetL().of([new stair_top_widget.StairTopWidget.new({$creationLocationd_0dea112b090073317d4: C[87] || CT.C87})]);
+                    for (let i = 0; i < 12; i = i + 1)
+                      t3[$addAll](T.LinkedHashSetOfWidgetL().from([new stair_mid_widget.StairMidWidget.new({$creationLocationd_0dea112b090073317d4: C[88] || CT.C88})]));
+                    t3[$add](new stair_bot_widget.StairBotWidget.new({$creationLocationd_0dea112b090073317d4: C[89] || CT.C89}));
+                    return t3;
+                  })(), $creationLocationd_0dea112b090073317d4: C[90] || CT.C90}), $creationLocationd_0dea112b090073317d4: C[93] || CT.C93}), new (T.ValueListenableBuilderOfMarioL()).new({valueListenable: this.controller.mario, builder: dart.fn((context, mario, child) => {
+                  let marioLeft = mario.left;
+                  let marioUp = mario.up;
+                  if (dart.notNull(marioLeft) < 0) marioLeft = 0.0;
+                  if (dart.notNull(marioUp) <= 115) marioUp = 115.0;
+                  let imgPath = home_page._selectImgPath(mario);
+                  return new mario_widget.MarioWidget.new({left: marioLeft, up: marioUp, imgPath: imgPath, $creationLocationd_0dea112b090073317d4: C[98] || CT.C98});
+                }, T.BuildContextLAndMarioLAndWidgetLToMarioWidgetL()), $creationLocationd_0dea112b090073317d4: C[103] || CT.C103}), new basic.Positioned.new({left: 25.0, top: 150.0, child: new kong_widget.KongWidget.new({$creationLocationd_0dea112b090073317d4: C[107] || CT.C107}), $creationLocationd_0dea112b090073317d4: C[108] || CT.C108}), new basic.Positioned.new({left: 89.0, top: 69.0, child: new princesa_widget.PrincesaWidget.new({$creationLocationd_0dea112b090073317d4: C[113] || CT.C113}), $creationLocationd_0dea112b090073317d4: C[114] || CT.C114})]), $creationLocationd_0dea112b090073317d4: C[119] || CT.C119}), $creationLocationd_0dea112b090073317d4: C[122] || CT.C122}), $creationLocationd_0dea112b090073317d4: C[126] || CT.C126});
+    }
+  };
+  (home_page._HomePageState.new = function() {
+    this.controller = new keyboard_controller.KeyboardController.new();
+    home_page._HomePageState.__proto__.new.call(this);
+    ;
+  }).prototype = home_page._HomePageState.prototype;
+  dart.addTypeTests(home_page._HomePageState);
+  dart.addTypeCaches(home_page._HomePageState);
+  dart.setMethodSignature(home_page._HomePageState, () => ({
+    __proto__: dart.getMethods(home_page._HomePageState.__proto__),
+    build: dart.fnType(dart.legacy(framework.Widget), [dart.legacy(framework.BuildContext)])
+  }));
+  dart.setLibraryUri(home_page._HomePageState, I[0]);
+  dart.setFieldSignature(home_page._HomePageState, () => ({
+    __proto__: dart.getFields(home_page._HomePageState.__proto__),
+    controller: dart.fieldType(dart.legacy(keyboard_controller.KeyboardController))
+  }));
+  home_page._selectImgPath = function _selectImgPath(mario) {
+    let upDown = mario.isUp;
+    let leftRight = mario.isLeft;
+    if (dart.test(leftRight)) {
+      let img = "mario" + dart.str(mario.img);
+      switch (mario.steps) {
+        case 1:
+        {
+          return "assets/sprites/walk/" + img + "2.png";
+          break;
+        }
+        case 2:
+        {
+          return "assets/sprites/walk/" + img + "1.png";
+          break;
+        }
+        default:
+        {
+          return "assets/sprites/walk/" + img + ".png";
+        }
+      }
+    }
+    if (dart.test(upDown)) {
+      let img = "marioStairs" + dart.str(mario.img);
+      return "assets/sprites/stairs/" + img + ".png";
+    }
+    return "";
+  };
+  dart.trackLibraries("packages/kong/pages/home_page.dart", {
+    "package:kong/pages/home_page.dart": home_page
+  }, {
+  }, '{"version":3,"sourceRoot":"","sources":["home_page.dart"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAckC;IAAgB;;;;;;EAClD;;;;;;;;;;;;;;UAM4B;;AACxB,YAAO,kCACC,kDAEK,+BACK,yBACR,gCACU,eACE,aACD,4DACe,mIAE1B,kCACU,aAEJ,6BAAmB,2BAAS,GAAG,QAAC,SAAU,iPAEhD,iCACS,aACC,cAEJ,6BAAmB,2BAAS,GAAG,QAAC,SAAU,mPAEhD,+BACO,cACE,6BACU,2BACb,GACA,QAAC,SAAU,mPAIjB,gCACQ,WACD,cACE,6BACU,2BACb,GACA,QAAC,SAAU,mPAIjB,gCACQ,YACD,cACE,sCACK,yBACR,sGADQ;AAGN,gCACK,2BACH,GACA,QAAC,SAAU;AAGb,6BAAI;;+IAGZ,gCACQ,WACD,aACE,gCAAiB;sDACtB;AACQ,2DAAS,IAAI,QAAC,SAAU;AAChC;;8IAGJ,gCACQ,WACD,aACE,gCAAiB;sDACtB;AACA,6BAAS,IAAI,GAAG,AAAE,CAAD,GAAG,IAAI,IAAA,AAAC,CAAA;AAAO,mEAC9B;AAEF;;8IAGJ,iCACS,YACF,cACE,gCAAiB;sDACtB;AACA,6BAAS,IAAI,GAAG,AAAE,CAAD,GAAG,IAAI,IAAA,AAAC,CAAA;AAAO,mEAC9B;AAEF;;8IAGJ,iCACS,eACC,cACD,gCAAiB;sDACtB;AACA,6BAAS,IAAI,GAAG,AAAE,CAAD,GAAG,IAAI,IAAA,AAAC,CAAA;AAAO,mEAC9B;AAEF;;8IAGJ,+DACmB,AAAW,gCACnB,SAAC,SAAS,OAAO;AACpB,kCAAY,AAAM,KAAD;AACjB,gCAAU,AAAM,KAAD;AAEnB,sBAAc,aAAV,SAAS,IAAG,GAAG,AAAa,YAAD;AAC/B,sBAAY,aAAR,OAAO,KAAI,KAAK,AAAa,UAAH;AAE1B,gCAAU,yBAAe,KAAK;AAElC,wBAAO,yCACC,SAAS,MACX,OAAO,WACF,OAAO;qIAItB,gCAAiB,WAAS,cAAY,0JACtC,gCAAiB,WAAS,aAAW;IAIjD;;;IA9HI,kBAAa;;;EA+HnB;;;;;;;;;;;;qDAE4B;AACpB,iBAAS,AAAM,KAAD;AACd,oBAAY,AAAM,KAAD;AACvB,kBAAI,SAAS;AACL,gBAAM,AAAmB,mBAAX,AAAM,KAAD;AACzB,cAAQ,AAAM,KAAD;;;AAET,gBAAO,AAAiC,0BAAV,GAAG,GAAC;AAClC;;;;AAEA,gBAAO,AAAiC,0BAAV,GAAG,GAAC;AAClC;;;;AAEA,gBAAO,AAA8B,0BAAR,GAAG;;;;AAGtC,kBAAI,MAAM;AACF,gBAAM,AAAyB,yBAAX,AAAM,KAAD;AAE/B,YAAO,AAAgC,4BAAR,GAAG;;AAEpC,UAAO;EACT","file":"../../../../../../../packages/kong/pages/home_page.dart.lib.js"}');
+  // Exports:
+  return {
+    pages__home_page: home_page
+  };
+}));
+
+//# sourceMappingURL=home_page.dart.lib.js.map
