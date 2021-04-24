@@ -1,16 +1,10 @@
-# kong
+# mario_kong
 
-A new Flutter project.
+Flutterando desafios.
 
-## Getting Started
+O desafio aqui era levar o mario até a princesa. Neste primeiro exemplo usei ValueListenableBuilder pra fazer o mario andar com os botões da tela.
 
-This project is a starting point for a Flutter application.
+A cada clique do keyboard_widget atualizo os valores de ValueNotifier<Mario> aumentando ou diminuindo up e left e também troco a imagem. Obvio que esse não é o melhor código mas por hora funcionou, quem sabe um dia volto aqui e melhoro né... abraços =)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![mario](https://user-images.githubusercontent.com/27310692/115971253-d4566b00-a51d-11eb-9008-4e98814a08e1.gif)
